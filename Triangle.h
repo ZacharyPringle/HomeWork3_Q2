@@ -9,8 +9,11 @@
 
 class Triangle:public Polygon {
 public:
+    Triangle();
+    Triangle(int newHeight, int newWidth){height=newHeight; width=newWidth;}
+    virtual int getArea(){return((width*height)/2);}
+    virtual void draw();
 protected:
 };
-
 
 #endif //HW3_Q2_TRIANGLE_H
