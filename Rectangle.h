@@ -9,10 +9,10 @@
 
 class Rectangle:public Polygon {
 public:
-    Rectangle();
-    Rectangle(int newHeight, int newWidth){height=newHeight; width=newWidth;}
-    virtual int getArea(){return(height*width);}
-    virtual void draw();
+    Rectangle();//default
+    Rectangle(int newHeight, int newWidth){height=newHeight; width=newWidth;}//sets width and height with the constructor
+    virtual int getArea(){return(height*width);}//returns area of a rectangle (base times height)
+    virtual void draw();//draws the rectangle on the screen using * symbols
 protected:
 };
 

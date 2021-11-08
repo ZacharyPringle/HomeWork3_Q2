@@ -9,10 +9,10 @@
 
 class Triangle:public Polygon {
 public:
-    Triangle();
-    Triangle(int newHeight, int newWidth){height=newHeight; width=newWidth;}
-    virtual int getArea(){return((width*height)/2);}
-    virtual void draw();
+    Triangle();//default
+    Triangle(int newHeight, int newWidth){height=newHeight; width=newWidth;}//constructor that sets height and weight with it
+    virtual int getArea(){return((width*height)/2);}//returns area of a triangle
+    virtual void draw();//draws the triangle using * for the shape. The shape size is determined by the height so the size is not the actual size of the triangle
 protected:
 };
 

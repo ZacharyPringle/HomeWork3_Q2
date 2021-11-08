@@ -6,7 +6,7 @@
 using namespace std;
 
 #include "Triangle.h"
-
+//draws the triangle
 void Triangle::draw() {
     int i,j,k;
     for(i=1;i<=height;i++){
